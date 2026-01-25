@@ -1,6 +1,6 @@
 # Omar Khattab Portfolio
 
-A polished single-page portfolio site for showcasing Omar Khattab's software engineering work, combining animated storytelling with recruiter-friendly project highlights.
+A polished single-page portfolio site for showcasing my software engineering work, combining animated storytelling with recruiter-friendly project highlights.
 
 ## Features
 - Responsive, section-based layout (Home, About, Projects, Experience, Skills, Education, Contact) with smooth hash navigation
