@@ -4,7 +4,7 @@ import { scrollToSection } from "@/lib/scroll";
 const socialLinks = [
   {
     name: "GitHub",
-    href: "https://github.com/omarkhattab",
+    href: "https://github.com/Omar-Khattab-01",
     icon: Github,
   },
   {

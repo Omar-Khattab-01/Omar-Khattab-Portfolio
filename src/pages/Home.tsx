@@ -87,11 +87,11 @@ export default function Home() {
               <a href="mailto:omar.hosam2000@gmail.com" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg glass glass-hover text-sm">
                 <Mail className="h-4 w-4 text-primary" />omar.hosam2000@gmail.com
               </a>
-              <a href="https://github.com/omarkhattab" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg glass glass-hover text-sm">
-                <Github className="h-4 w-4 text-primary" />github.com/omarkhattab
+              <a href="https://github.com/Omar-Khattab-01" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg glass glass-hover text-sm">
+                <Github className="h-4 w-4 text-primary" />Omar-Khattab-01
               </a>
               <a href="https://www.linkedin.com/in/omar-khattab-4b10581b9/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg glass glass-hover text-sm">
-                <Linkedin className="h-4 w-4 text-primary" />Linkedin.com/omarkhattab
+                <Linkedin className="h-4 w-4 text-primary" />omar khattab
               </a>
             </motion.div>
           </motion.div>

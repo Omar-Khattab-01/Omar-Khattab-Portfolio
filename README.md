@@ -45,4 +45,4 @@ npm run test   # unit tests
 - Publish live demo and include annotated screenshots in `docs/`
 
 ## Author
-Omar Khattab — [GitHub](https://github.com/omarkhattab) | [LinkedIn](https://www.linkedin.com/in/omar-khattab-4b10581b9/) | omar.hosam2000@gmail.com
+Omar Khattab — [GitHub](https://github.com/Omar-Khattab-01) | [LinkedIn](https://www.linkedin.com/in/omar-khattab-4b10581b9/) | omar.hosam2000@gmail.com

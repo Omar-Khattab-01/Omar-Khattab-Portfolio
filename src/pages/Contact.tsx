@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Mail, Github, Download, Send, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
+import { Mail, Github, Download, Send, Linkedin, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -120,7 +120,7 @@ export default function Contact() {
                   </motion.a>
 
                   <motion.a
-                    href="https://github.com/omarkhattab"
+                    href="https://github.com/Omar-Khattab-01"
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ x: 5 }}
@@ -132,7 +132,25 @@ export default function Contact() {
                     <div>
                       <p className="text-sm text-muted-foreground">GitHub</p>
                       <p className="font-medium text-foreground">
-                        github.com/omarkhattab
+                        Omar-Khattab-01
+                      </p>
+                    </div>
+                  </motion.a>
+
+                  <motion.a
+                    href="https://www.linkedin.com/in/omar-khattab-4b10581b9/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ x: 5 }}
+                    className="flex items-center gap-4 p-4 glass glass-hover rounded-xl group"
+                  >
+                    <div className="p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
+                      <Linkedin className="h-5 w-5 text-primary" />
+                    </div>
+                    <div>
+                      <p className="text-sm text-muted-foreground">LinkedIn</p>
+                      <p className="font-medium text-foreground">
+                        omar khattab
                       </p>
                     </div>
                   </motion.a>
