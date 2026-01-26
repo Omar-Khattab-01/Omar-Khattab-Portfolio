@@ -242,7 +242,7 @@ export default function Projects() {
           />
 
           {/* Project Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:[&>*:last-child:nth-child(3n+1)]:lg:col-start-2">
             {projects.map((project, index) => (
               <motion.div
                 key={project.id}
