@@ -52,11 +52,11 @@ export default function Home() {
             </motion.h1>
 
             <motion.p variants={itemVariants} className="text-xl sm:text-2xl text-primary font-medium mb-4">
-              Machine Learning + Automation
+              Machine Learning, Data Systems & Automation
             </motion.p>
 
             <motion.p variants={itemVariants} className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-              Python automation, ETL/IR evaluation, TensorFlow retrieval models, Elasticsearch
+              Experience building Python automation, scalable data pipelines, and ML-powered systems using TensorFlow and Elasticsearch.
             </motion.p>
 
             <motion.div variants={itemVariants} className="flex flex-wrap justify-center gap-4 mb-12">

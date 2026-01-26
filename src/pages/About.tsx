@@ -51,7 +51,7 @@ export default function About() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             title="About Me"
-            subtitle="Computer Science New Grad passionate about Machine Learning and Automation"
+            subtitle="Computer Science New Grad with a focus on machine learning systems, data pipelines, and automation."
           />
           <motion.div
             variants={containerVariants}
@@ -91,13 +91,13 @@ export default function About() {
               >
                 <div className="prose prose-lg dark:prose-invert max-w-none">
                   <p className="text-lg text-muted-foreground leading-relaxed mb-5">
-                    I’m Omar Khattab, a Computer Science major at the University of Ottawa, graduating in April 2026. I focus on building practical software systems with an emphasis on automation, testing, and reliability.
+                    I’m Omar Khattab, a Computer Science student at the University of Ottawa graduating in April 2026. I build practical software systems with a focus on automation, testing, performance evaluation, and reliability.
                   </p>
                   <p className="text-lg text-muted-foreground leading-relaxed mb-5">
-                    My experience includes developing backend services, data pipelines, evaluation workflows, and tooling that improve developer productivity and system quality.
+                    My experience includes developing backend services, Python automation, data pipelines, and engineering tooling that improve system quality and developer workflows. I work in Linux-based environments and design workflows for automated testing and evaluation.
                   </p>
                   <p className="text-lg text-muted-foreground leading-relaxed mb-5">
-                    I enjoy writing clean, maintainable code and designing workflows.
+                    I write clean, maintainable code and build scalable systems that support dependable, efficient software.
                   </p>
           
                 </div>
