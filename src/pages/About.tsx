@@ -60,7 +60,7 @@ export default function About() {
             viewport={{ once: true, amount: 0.3 }}
             className="max-w-6xl mx-auto"
           >
-            <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr_1fr] gap-10 lg:gap-12 items-start">
+            <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr_1fr] gap-10 lg:gap-12 items-center">
               {/* Middle: Photo */}
               <motion.div
                 variants={itemVariants}
@@ -87,15 +87,13 @@ export default function About() {
               {/* Left: About Text */}
               <motion.div
                 variants={itemVariants}
-                className="glass rounded-2xl p-8 order-2 lg:order-1"
+                className="glass rounded-2xl p-8 order-2 lg:order-1 self-center"
               >
                 <div className="prose prose-lg dark:prose-invert max-w-none">
                   <p className="text-lg text-muted-foreground leading-relaxed mb-5">
-                    I’m Omar Khattab, a Computer Science student at the University of Ottawa graduating in April 2026. I build practical software systems with a focus on automation, testing, performance evaluation, and reliability.
-                  </p>
+                    I’m Omar Khattab, a Computer Science student at the University of Ottawa graduating in April 2026, building practical software systems with emphasis on automation, testing, performance evaluation, and reliability.                  </p>
                   <p className="text-lg text-muted-foreground leading-relaxed mb-5">
-                    My experience includes developing backend services, Python automation, data pipelines, and engineering tooling that improve system quality and developer workflows. I work in Linux-based environments and design workflows for automated testing and evaluation.
-                  </p>
+                    My experience includes developing backend services, Python automation, data pipelines, and engineering tooling that improve system quality and developer workflows. I work in Linux-based environments and design workflows for automated testing and system evaluation.                  </p>
                   <p className="text-lg text-muted-foreground leading-relaxed mb-5">
                     I write clean, maintainable code and build scalable systems that support dependable, efficient software.
                   </p>
@@ -106,7 +104,7 @@ export default function About() {
               {/* Right: Values */}
               <motion.div
                 variants={containerVariants}
-                className="order-3 lg:order-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6"
+                className="order-3 lg:order-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6 self-center"
               >
                 {values.map((value) => (
                   <motion.div
