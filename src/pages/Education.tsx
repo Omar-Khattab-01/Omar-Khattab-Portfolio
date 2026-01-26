@@ -130,7 +130,7 @@ export default function Education() {
                 <p className="text-muted-foreground">Years of Coding Experience</p>
               </div>
               <div className="glass rounded-xl p-6 text-center">
-                <div className="text-3xl font-bold gradient-text mb-2">28</div>
+                <div className="text-3xl font-bold gradient-text mb-2">30</div>
                 <p className="text-muted-foreground">Core CS Courses Completed</p>
               </div>
             </motion.div>
