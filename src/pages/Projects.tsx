@@ -51,6 +51,24 @@ const projects: Project[] = [
     githubUrl: "https://github.com/Omar-Khattab-01/brightsmile-dental-site",
   },
   {
+    id: "omar-khattab-portfolio",
+    title: "Omar Khattab Portfolio",
+    date: "2025",
+    summary:
+      "Single-page portfolio showcasing projects and experience with motion, responsive layout, and recruiter-ready CTAs.",
+    description:
+      "The very site you're viewing: a React + TypeScript portfolio built with Vite, Tailwind, shadcn/ui, and Framer Motion, featuring smooth section navigation, modal project details, and accessible theming.",
+    bullets: [
+      "Section-based layout with hash navigation, sticky navbar, and back-to-top control",
+      "Framer Motion animations tuned for mobile and desktop performance",
+      "shadcn/ui component system with Tailwind tokens for consistent styling",
+      "Resume download, social links, and recruiter-focused calls-to-action",
+    ],
+    tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "shadcn/ui", "Framer Motion"],
+    imageSrc: "/portfolio.png",
+    githubUrl: "https://github.com/Omar-Khattab-01/Omar-Khattab-Portfolio",
+  },
+  {
     id: "byblos-car-rental",
     title: "Byblos Car Rental Platform",
     date: "2024",
@@ -224,82 +242,74 @@ export default function Projects() {
           />
 
           {/* Project Cards */}
-          <motion.div
-            layout
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-          >
-            <AnimatePresence mode="popLayout">
-              {projects.map((project, index) => (
-                <motion.div
-                  key={project.id}
-                  layout
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true, amount: 0.3 }}
-                  exit={{ opacity: 0, scale: 0.9 }}
-                  transition={{ delay: index * 0.1 }}
-                  whileHover={{ y: -8 }}
-                  className="group"
-                >
-                  <div className="glass glass-hover rounded-2xl p-6 h-full flex flex-col relative overflow-hidden">
-                    {/* Glow Effect */}
-                    <div className="absolute inset-0 pointer-events-none bg-gradient-to-br from-primary/5 via-transparent to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                    
-                    <div className="relative z-10 flex h-full flex-col">
-                      <ProjectThumbnail src={project.imageSrc} title={project.title} />
-                      {/* Title */}
-                      <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
-                        {project.title}
-                      </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {projects.map((project, index) => (
+              <motion.div
+                key={project.id}
+                layout
+                initial={false}
+                transition={{ delay: index * 0.05, duration: 0.25 }}
+                whileHover={{ y: -8 }}
+                className="group"
+              >
+                <div className="glass glass-hover rounded-2xl p-6 h-full flex flex-col relative overflow-hidden">
+                  {/* Glow Effect */}
+                  <div className="absolute inset-0 pointer-events-none bg-gradient-to-br from-primary/5 via-transparent to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  
+                  <div className="relative z-10 flex h-full flex-col">
+                    <ProjectThumbnail src={project.imageSrc} title={project.title} />
+                    {/* Title */}
+                    <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
+                      {project.title}
+                    </h3>
 
-                      {/* Date Badge */}
-                      <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
-                        <Calendar className="h-4 w-4" />
-                        {project.date}
-                      </div>
+                    {/* Date Badge */}
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
+                      <Calendar className="h-4 w-4" />
+                      {project.date}
+                    </div>
 
-                      {/* Summary */}
-                      <p className="text-muted-foreground text-sm mb-4 flex-1 truncate">
-                        {project.summary}
-                      </p>
+                    {/* Summary */}
+                    <p className="text-muted-foreground text-sm mb-4 flex-1 truncate">
+                      {project.summary}
+                    </p>
 
-                      {/* Tech Stack */}
-                      <div className="flex flex-wrap gap-2 mb-4">
-                        {project.tech.slice(0, 4).map((tech) => (
-                          <Badge
-                            key={tech}
-                            variant="secondary"
-                            className="text-xs"
-                          >
-                            {tech}
-                          </Badge>
-                        ))}
-                        {project.tech.length > 4 && (
-                          <Badge variant="outline" className="text-xs">
-                            +{project.tech.length - 4}
-                          </Badge>
-                        )}
-                      </div>
-
-                      {/* Actions */}
-                      <div className="mt-auto flex">
-                        <Button
-                          size="sm"
-                          onClick={(event) => {
-                            lastFocusedButtonRef.current = event.currentTarget;
-                            setSelectedProject(project);
-                          }}
-                          className="w-full"
+                    {/* Tech Stack */}
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {project.tech.slice(0, 4).map((tech) => (
+                        <Badge
+                          key={tech}
+                          variant="secondary"
+                          className="text-xs"
                         >
-                          Details
-                        </Button>
-                      </div>
+                          {tech}
+                        </Badge>
+                      ))}
+                      {project.tech.length > 4 && (
+                        <Badge variant="outline" className="text-xs">
+                          +{project.tech.length - 4}
+                        </Badge>
+                      )}
+                    </div>
+
+                    {/* Actions */}
+                    <div className="mt-auto flex">
+                      <Button
+                        size="sm"
+                        onClick={(event) => {
+                          lastFocusedButtonRef.current = event.currentTarget;
+                          setSelectedProject(project);
+                        }}
+                        className="w-full"
+                      >
+                        Details
+                      </Button>
                     </div>
                   </div>
-                </motion.div>
-              ))}
-            </AnimatePresence>
-          </motion.div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
