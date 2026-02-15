@@ -14,6 +14,7 @@ export interface Project {
   bullets: string[];
   tech: string[];
   imageSrc: string;
+  detailsImageSrc?: string;
   githubUrl?: string;
   liveUrl?: string;
 }
@@ -106,7 +107,10 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
               <X className="h-5 w-5" />
             </Button>
 
-            <ProjectModalImage src={project.imageSrc} title={project.title} />
+            <ProjectModalImage
+              src={project.detailsImageSrc ?? project.imageSrc}
+              title={project.title}
+            />
 
             <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
               <Calendar className="h-4 w-4" />

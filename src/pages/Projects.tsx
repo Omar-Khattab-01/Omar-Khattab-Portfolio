@@ -8,7 +8,15 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ProjectModal, type Project } from "@/components/projects/ProjectModal";
 
 
-function ProjectThumbnail({ src, title }: { src: string; title: string }) {
+function ProjectThumbnail({
+  src,
+  title,
+  fit = "cover",
+}: {
+  src: string;
+  title: string;
+  fit?: "cover" | "contain";
+}) {
   const [hasError, setHasError] = useState(false);
 
   return (
@@ -21,7 +29,7 @@ function ProjectThumbnail({ src, title }: { src: string; title: string }) {
         <img
           src={src}
           alt={`${title} thumbnail`}
-          className="h-full w-full object-cover"
+          className={`h-full w-full ${fit === "contain" ? "object-contain bg-muted/30 p-1" : "object-cover"}`}
           onError={() => setHasError(true)}
           loading="lazy"
         />
@@ -32,6 +40,26 @@ function ProjectThumbnail({ src, title }: { src: string; title: string }) {
 
 
 const projects: Project[] = [
+  {
+    id: "oc-bus-tracker-chat",
+    title: "OC Bus Tracker Chat",
+    date: "2026",
+    summary:
+      "Live OC Transpo helper that maps a block number to active bus IDs and latest location text.",
+    description:
+      "A chat-style transit utility that accepts block numbers (for example, 44-07), normalizes user input (44-7 to 44-07), and returns bus assignment and latest location updates.",
+    bullets: [
+      "Block input normalization to reduce formatting mistakes",
+      "Chat-style interface for quick dispatch-like lookups",
+      "API endpoint for programmatic block tracking requests",
+      "Published as a live Hugging Face Space for easy access",
+    ],
+    tech: ["Node.js", "Express", "Playwright", "JavaScript", "Hugging Face Spaces"],
+    imageSrc: "/Bus_Tracker.png",
+    detailsImageSrc: "/Bus_Tracker_details.png",
+    githubUrl: "https://github.com/Omar-Khattab-01/OC_Bus_Tracker",
+    liveUrl: "https://huggingface.co/spaces/OmarLKhattab/OC_Bus_Tracker",
+  },
   {
     id: "brightsmile-dental-clinic",
     title: "BrightSmile Dental Clinic",
@@ -257,7 +285,11 @@ export default function Projects() {
                   <div className="absolute inset-0 pointer-events-none bg-gradient-to-br from-primary/5 via-transparent to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   
                   <div className="relative z-10 flex h-full flex-col">
-                    <ProjectThumbnail src={project.imageSrc} title={project.title} />
+                    <ProjectThumbnail
+                      src={project.imageSrc}
+                      title={project.title}
+                      fit={project.id === "oc-bus-tracker-chat" ? "contain" : "cover"}
+                    />
                     {/* Title */}
                     <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
                       {project.title}
