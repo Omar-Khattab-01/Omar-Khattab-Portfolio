@@ -2,6 +2,9 @@
 
 A polished single-page portfolio site for showcasing my software engineering work, combining animated storytelling with recruiter-friendly project highlights.
 
+## Live Site
+https://www.omarkhattab.ca
+
 ## Features
 - Responsive, section-based layout (Home, About, Projects, Experience, Skills, Education, Contact) with smooth hash navigation
 - Framer Motion micro-interactions and scroll reveals to keep the page lively without hurting performance
@@ -42,7 +45,7 @@ npm run test   # unit tests
 - Add dynamic content (project data via CMS or JSON) to simplify updates
 - Expand test coverage for interactive components and scroll behaviors
 - Introduce theme toggle and performance-driven code splitting for large sections
-- Publish live demo and include annotated screenshots in `docs/`
+- Include annotated screenshots in `docs/`
 
 ## Author
 Omar Khattab — [GitHub](https://github.com/Omar-Khattab-01) | [LinkedIn](https://www.linkedin.com/in/omar-khattab-4b10581b9/) | omar.hosam2000@gmail.com

@@ -45,20 +45,20 @@ const projects: Project[] = [
     title: "OC Bus Tracker Chat",
     date: "2026",
     summary:
-      "Live OC Transpo helper that maps a block number to active bus IDs and latest location text.",
+      "Live OC Transpo helper that maps a block number to active bus IDs and latest location text through a chat-style interface.",
     description:
-      "A chat-style transit utility that accepts block numbers (for example, 44-07), normalizes user input (44-7 to 44-07), and returns bus assignment and latest location updates.",
+      "A live OC Transpo tracking tool that accepts block numbers such as 44-07, normalizes input like 44-7 to 44-07, and returns the active bus number(s) plus latest location text in a simple chat-style interface.",
     bullets: [
       "Block input normalization to reduce formatting mistakes",
       "Chat-style interface for quick dispatch-like lookups",
       "API endpoint for programmatic block tracking requests",
-      "Published as a live Hugging Face Space for easy access",
+      "Deployed live on Vercel for quick operator access",
     ],
-    tech: ["Node.js", "Express", "Playwright", "JavaScript", "Hugging Face Spaces"],
+    tech: ["Node.js", "Express", "Playwright", "JavaScript", "Vercel"],
     imageSrc: "/Bus_Tracker.png",
     detailsImageSrc: "/Bus_Tracker_details.png",
-    githubUrl: "https://github.com/Omar-Khattab-01/OC_Bus_Tracker",
-    liveUrl: "https://huggingface.co/spaces/OmarLKhattab/OC_Bus_Tracker",
+    githubUrl: "https://github.com/Omar-Khattab-01/OC-Bus-Tracker",
+    liveUrl: "https://oc-bus-tracker.vercel.app/",
   },
   {
     id: "brightsmile-dental-clinic",
