@@ -45,16 +45,16 @@ const projects: Project[] = [
     title: "OC Bus Tracker Chat",
     date: "2026",
     summary:
-      "Live OC Transpo helper that maps a block number to active bus IDs and latest location text through a chat-style interface.",
+      "Live OC Transpo helper that takes a block number and returns the active bus number(s) plus latest location text.",
     description:
-      "A live OC Transpo tracking tool that accepts block numbers such as 44-07, normalizes input like 44-7 to 44-07, and returns the active bus number(s) plus latest location text in a simple chat-style interface.",
+      "A live OC Transpo helper tool that accepts a block number such as 44-07 and returns the active bus number(s) with the latest location text in a simple chat-style interface.",
     bullets: [
-      "Block input normalization to reduce formatting mistakes",
-      "Chat-style interface for quick dispatch-like lookups",
-      "API endpoint for programmatic block tracking requests",
-      "Deployed live on Vercel for quick operator access",
+      "Accepts standard block-number input in formats like 44-07",
+      "Automatically normalizes entries like 44-7 to 44-07",
+      "Returns active bus numbers and the latest location line",
+      "Exposes a POST /api/chat endpoint for programmatic tracking requests",
     ],
-    tech: ["Node.js", "Express", "Playwright", "JavaScript", "Vercel"],
+    tech: ["Node.js", "JavaScript", "HTML", "CSS", "Vercel"],
     imageSrc: "/Bus_Tracker.png",
     detailsImageSrc: "/Bus_Tracker_details.png",
     githubUrl: "https://github.com/Omar-Khattab-01/OC-Bus-Tracker",
