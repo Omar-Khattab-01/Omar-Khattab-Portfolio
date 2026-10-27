@@ -114,8 +114,31 @@ export const projects: Project[] = [
       "Firebase",
       "HTML / CSS"
     ],
-    "imageSrc": "/projects/milanos-cashout.svg",
-    "githubUrl": "https://github.com/Omar-Khattab-01/milanos-cashout"
+    "imageSrc": "/projects/milanos-cashout.svg"
+  },
+  {
+    "id": "prime-physio-plus",
+    "title": "Prime Physio Plus",
+    "date": "2026",
+    "category": "Business Apps",
+    "summary": "Coordinate clinic visits, treatment plans, cubicle assignments, live task tracking, and staff workflows.",
+    "description": "A clinic operations application built for Prime Physio Plus that coordinates visits from treatment plan to completion. Administrators assign cubicles and manage active visits, while dedicated staff screens track tasks, timing, and progress across the clinic floor.",
+    "bullets": [
+      "Start visits from saved treatment plans and assign a primary cubicle",
+      "Show task checklists, visit status, and time remaining on live cubicle screens",
+      "Record staff acknowledgements and task completions with timestamps",
+      "Manage the daily staff roster, edit live task lists, and reassign cubicles",
+      "Track cleaning resets and retain action history for completed or cancelled visits"
+    ],
+    "tech": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Prisma",
+      "PostgreSQL",
+      "Tailwind CSS"
+    ],
+    "imageSrc": "/projects/prime-physio-plus.svg"
   },
   {
     "id": "oc-bus-tracker-chat",

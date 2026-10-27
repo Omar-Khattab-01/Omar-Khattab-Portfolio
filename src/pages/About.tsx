@@ -94,7 +94,7 @@ export default function About() {
                     I’m Omar Khattab, a Business Specialist working in Customer Information Systems, with a Computer Science background from the University of Ottawa. I connect operational needs with practical, dependable software.
                   </p>
                   <p className="text-lg text-muted-foreground leading-relaxed mb-5">
-                    My public projects include transit operator tools, GTFS feed inspection and validation, project tracking, and business applications. I also build Python automation, data pipelines, and machine learning experiments.
+                    My projects include transit operator tools, GTFS feed inspection and validation, project tracking, and business applications. I also build Python automation, data pipelines, and machine learning experiments.
                   </p>
                   <p className="text-lg text-muted-foreground leading-relaxed mb-5">
                     I focus on clear workflows, traceable data, and maintainable systems that make everyday work easier.

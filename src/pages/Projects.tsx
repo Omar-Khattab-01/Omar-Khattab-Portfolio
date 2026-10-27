@@ -60,7 +60,7 @@ export default function Projects() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             title="Projects"
-            subtitle="Public work in transit technology, business applications, AI, and software development"
+            subtitle="Projects in transit technology, business applications, AI, and software development"
           />
 
           <div className="mb-8 flex flex-wrap justify-center gap-2" role="group" aria-label="Filter projects by category">
