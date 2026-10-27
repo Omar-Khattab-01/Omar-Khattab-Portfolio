@@ -51,7 +51,7 @@ export default function About() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             title="About Me"
-            subtitle="Computer Science New Grad with a focus on machine learning systems, data pipelines, and automation."
+            subtitle="Business Specialist in Customer Information Systems with a background in software, data systems, and automation."
           />
           <motion.div
             variants={containerVariants}
@@ -91,13 +91,15 @@ export default function About() {
               >
                 <div className="prose prose-lg dark:prose-invert max-w-none">
                   <p className="text-lg text-muted-foreground leading-relaxed mb-5">
-                    I’m Omar Khattab, a Computer Science student at the University of Ottawa graduating in April 2026, building practical software systems with emphasis on automation, testing, performance evaluation, and reliability.                  </p>
-                  <p className="text-lg text-muted-foreground leading-relaxed mb-5">
-                    My experience includes developing backend services, Python automation, data pipelines, and engineering tooling that improve system quality and developer workflows. I work in Linux-based environments and design workflows for automated testing and system evaluation.                  </p>
-                  <p className="text-lg text-muted-foreground leading-relaxed mb-5">
-                    I write clean, maintainable code and build scalable systems that support dependable, efficient software.
+                    I’m Omar Khattab, a Business Specialist working in Customer Information Systems, with a Computer Science background from the University of Ottawa. I connect operational needs with practical, dependable software.
                   </p>
-          
+                  <p className="text-lg text-muted-foreground leading-relaxed mb-5">
+                    My public projects include transit operator tools, GTFS feed inspection and validation, project tracking, and business applications. I also build Python automation, data pipelines, and machine learning experiments.
+                  </p>
+                  <p className="text-lg text-muted-foreground leading-relaxed mb-5">
+                    I focus on clear workflows, traceable data, and maintainable systems that make everyday work easier.
+                  </p>
+
                 </div>
               </motion.div>
 

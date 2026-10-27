@@ -16,6 +16,18 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
+    id: "business-specialist-cis",
+    title: "Business Specialist, Customer Information Systems",
+    company: "City of Ottawa / OC Transpo",
+    location: "Ottawa, ON",
+    period: "Jun 2026 – Present",
+    description: [
+      "Work in transit customer information systems, bringing together operational needs and technology.",
+      "Bring hands-on bus and rail operations experience and a Computer Science background to business workflows.",
+    ],
+    type: "tech",
+  },
+  {
     id: "ml-engineer",
     title: "Machine Learning Engineer",
     company: "University of Ottawa",
@@ -35,7 +47,7 @@ const experiences: Experience[] = [
     title: "Electric Rail Operator (ERO)",
     company: "OC Transpo",
     location: "Ottawa, ON",
-    period: "Apr 2025 – Present",
+    period: "Apr 2025 – Jun 2026",
     description: [
       "Operate/monitor LRT under TOCC direction using CBTC",
       "Radio comms with repeat-backs, movement authority",
@@ -61,7 +73,7 @@ const experiences: Experience[] = [
 export default function Experience() {
   return (
     <PageWrapper>
-      <section id="experience" className="py-20 scroll-mt-20">
+      <section id="experience" className="py-20 scroll-mt-20 overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             title="Experience"
@@ -91,7 +103,7 @@ export default function Experience() {
                   </div>
 
                   {/* Content */}
-                  <div className={`flex-1 pl-8 md:pl-0 ${index % 2 === 0 ? "md:pr-12 md:text-right" : "md:pl-12"}`}>
+                  <div className={`min-w-0 flex-1 pl-8 md:pl-0 ${index % 2 === 0 ? "md:pr-12 md:text-right" : "md:pl-12"}`}>
                     <motion.div
                       whileHover={{ scale: 1.02 }}
                       className="glass glass-hover rounded-2xl p-6"
@@ -101,7 +113,7 @@ export default function Experience() {
                         <div className="p-3 rounded-lg bg-primary/10">
                           <Briefcase className="h-6 w-6 text-primary" />
                         </div>
-                        <div className={`flex-1 ${index % 2 === 0 ? "md:text-right" : ""}`}>
+                        <div className={`min-w-0 flex-1 ${index % 2 === 0 ? "md:text-right" : ""}`}>
                           <h3 className="text-xl font-semibold text-foreground">
                             {exp.title}
                           </h3>

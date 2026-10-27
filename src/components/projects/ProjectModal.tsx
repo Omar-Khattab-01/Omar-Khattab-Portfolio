@@ -9,6 +9,7 @@ export interface Project {
   id: string;
   title: string;
   date: string;
+  category: "Transit" | "Business Apps" | "AI & Data" | "Web & Mobile" | "Coursework & Tools";
   summary: string;
   description: string;
   bullets: string[];
@@ -16,6 +17,7 @@ export interface Project {
   imageSrc: string;
   detailsImageSrc?: string;
   githubUrl?: string;
+  relatedRepositories?: { label: string; url: string }[];
   liveUrl?: string;
 }
 
@@ -186,6 +188,15 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                     </a>
                   </Button>
                 )}
+                {project.relatedRepositories?.map((repository) => (
+                  <Button key={repository.url} asChild variant="outline" className="gap-2">
+                    <a href={repository.url} target="_blank" rel="noopener noreferrer">
+                      <Github className="h-4 w-4" />
+                      {repository.label}
+                      <ExternalLink className="h-4 w-4" />
+                    </a>
+                  </Button>
+                ))}
               </div>
             )}
         </motion.div>

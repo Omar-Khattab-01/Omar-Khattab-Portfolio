@@ -46,7 +46,7 @@ export function Footer() {
               Omar Khattab
             </button>
             <p className="text-sm text-muted-foreground max-w-xs">
-              Computer Science New Grad specializing in Machine Learning, Automation, and Data Systems.
+              Business Specialist in Customer Information Systems, building practical tools for transit, data quality, and automation.
             </p>
           </div>
 

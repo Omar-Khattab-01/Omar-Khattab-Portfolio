@@ -85,7 +85,7 @@ export default function Contact() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             title="Contact"
-            subtitle="Let's connect! Feel free to reach out for opportunities or collaborations"
+            subtitle="Let's connect about transit technology, software projects, or collaborations"
           />
 
           <div className="max-w-4xl mx-auto">

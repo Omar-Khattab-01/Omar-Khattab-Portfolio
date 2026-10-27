@@ -41,22 +41,20 @@ export default function Home() {
             <motion.div variants={itemVariants} className="mb-6">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm font-medium">
                 <Sparkles className="h-4 w-4 text-primary" />
-                Available for Opportunities
+                Customer Information Systems
               </span>
             </motion.div>
 
             <motion.h1 variants={itemVariants} className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold mb-6 leading-tight">
-              <span className="gradient-text">Computer Science</span>
-              <br />
-              <span className="text-foreground">New Grad</span>
+              <span className="gradient-text">Business Specialist</span>
             </motion.h1>
 
             <motion.p variants={itemVariants} className="text-xl sm:text-2xl text-primary font-medium mb-4">
-              Machine Learning, Data Systems & Automation
+              Transit Technology, Data Systems & Automation
             </motion.p>
 
             <motion.p variants={itemVariants} className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-              Experience building Python automation, scalable data pipelines, and ML-powered systems using TensorFlow and Elasticsearch.
+              I build practical software for transit operations, data quality, and everyday business workflows, backed by a Computer Science background.
             </motion.p>
 
             <motion.div variants={itemVariants} className="flex flex-wrap justify-center gap-4 mb-12">
