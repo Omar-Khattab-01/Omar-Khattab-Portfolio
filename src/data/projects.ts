@@ -141,6 +141,31 @@ export const projects: Project[] = [
     "imageSrc": "/projects/prime-physio-plus.svg"
   },
   {
+    "id": "mr-fez-menu-management",
+    "title": "Mr. Fez Menu Management System",
+    "date": "2026",
+    "category": "Business Apps",
+    "summary": "Manage restaurant menus, prices, photos, and promotions remotely, then publish reviewed updates to four TV displays.",
+    "description": "A restaurant menu management and digital signage application built for Mr. Fez Ottawa. Staff prepare shared menu drafts and upload product photos; owners review and publish changes to four connected TV menus. The app brings together everyday menu editing, coordinated display layouts, promotions, and scheduled content.",
+    "bullets": [
+      "Edit menu items, prices, availability, product photos, branding, and ticker messages",
+      "Save shared drafts for owner review before publishing updates to all four TVs",
+      "Manage approved owner and manager access and pair read-only TV screens",
+      "Schedule menu variations, timed specials, and multilingual customer content",
+      "Coordinate four-screen layouts and animations, with remote screen refresh controls",
+      "Support Windows display launchers and recovery workflows for the screen setup"
+    ],
+    "tech": [
+      "JavaScript",
+      "HTML / CSS",
+      "Firebase Auth",
+      "Firestore",
+      "Firebase Storage",
+      "Cloudflare Pages"
+    ],
+    "imageSrc": "/projects/mr-fez-menu-management.svg"
+  },
+  {
     "id": "oc-bus-tracker-chat",
     "title": "OC Bus Tracker Chat",
     "date": "2026",
